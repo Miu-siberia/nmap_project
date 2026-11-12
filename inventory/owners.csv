@@ -1,0 +1,6 @@
+ip,host,owner
+10.10.10.10,srv-ad,Phòng IT - Hạ tầng
+10.10.10.20,srv-app,Phòng IT - Ứng dụng
+10.10.20.10,ws-user,Phòng IT - Người dùng
+10.10.30.50,iot-cam01,Phòng Vận hành
+10.10.99.10,kali-scan,Sinh viên (máy quét)

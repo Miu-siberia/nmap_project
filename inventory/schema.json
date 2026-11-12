@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ĐT-02 Asset Inventory Record",
+  "type": "object",
+  "required": ["ip", "port", "proto"],
+  "properties": {
+    "host":       {"type": "string", "description": "Tên host/nhãn trong bảng tài sản kỳ vọng"},
+    "ip":         {"type": "string", "description": "Địa chỉ IP trong lab"},
+    "mac":        {"type": "string", "description": "Địa chỉ MAC nếu quét được"},
+    "os":         {"type": "string", "description": "Hệ điều hành ước đoán (trống với vùng OT)"},
+    "port":       {"type": "integer"},
+    "proto":      {"type": "string", "enum": ["tcp", "udp"]},
+    "service":    {"type": "string"},
+    "version":    {"type": "string"},
+    "owner":      {"type": "string", "description": "Chủ sở hữu tài sản"},
+    "risk":       {"type": "string", "enum": ["cao", "trung bình", "thấp"]},
+    "risk_reason":{"type": "string"},
+    "first_seen": {"type": "string", "description": "YYYY-MM-DDTHH:MM"},
+    "last_seen":  {"type": "string", "description": "YYYY-MM-DDTHH:MM"}
+  }
+}

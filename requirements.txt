@@ -1,0 +1,3 @@
+# Pipeline chỉ dùng thư viện chuẩn của Python 3 (xml, json, csv, urllib).
+# Không bắt buộc cài gì thêm. Tùy chọn:
+# python-nmap==0.7.1   # nếu muốn gọi Nmap trực tiếp từ Python
